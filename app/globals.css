@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --swedish-blue: #006aa7;
+  --swedish-yellow: #fecc02;
+  --light-blue: #f0f8ff;
+  --dark-blue: #004d7a;
+  --text-dark: #2c3e50;
+  --text-light: #7f8c8d;
+  --background: #ffffff;
+  --section-bg: #f8f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-dark);
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.6;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, var(--swedish-blue) 0%, var(--dark-blue) 100%);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.section-alternate {
+  background: var(--section-bg);
+}
+
+.timer-box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 106, 167, 0.2);
+  border: 3px solid var(--swedish-yellow);
+}
+
+.info-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  color: var(--swedish-blue);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.section-subtitle {
+  color: var(--text-light);
+  margin-bottom: 3rem;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(135deg, var(--swedish-blue), var(--dark-blue));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.stats-number {
+  font-weight: 800;
+  color: var(--swedish-blue);
+  line-height: 1;
+}
+
+.step-number {
+  width: 40px;
+  height: 40px;
+  background: var(--swedish-yellow);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+  }
+
+  .timer-box {
+    padding: 1.5rem !important;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 100vh;
+    padding: 1rem 0.5rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
