@@ -66,12 +66,6 @@ export default function CookiePolicy() {
               </p>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">Kontakt</h2>
-              <p className="text-gray-600 leading-relaxed">
-                Om du har frågor om vår användning av cookies, kontakta oss på cookies@postkodlotteriet.se
-              </p>
-            </section>
           </div>
         </div>
       </div>

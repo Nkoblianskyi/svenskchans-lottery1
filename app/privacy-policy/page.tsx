@@ -48,13 +48,6 @@ export default function PrivacyPolicy() {
               </p>
             </section>
 
-            <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Kontakt</h2>
-              <p className="text-gray-600 leading-relaxed">
-                För frågor om denna integritetspolicy eller dina personuppgifter, kontakta oss på
-                privacy@postkodlotteriet.se eller ring 08-123 456 78.
-              </p>
-            </section>
           </div>
         </div>
       </div>

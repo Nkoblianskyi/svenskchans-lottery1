@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export function SafetySecurity() {
   const securityFeatures = [
     {
@@ -59,7 +61,7 @@ export function SafetySecurity() {
             <div className="space-y-6">
               {securityFeatures.map((feature, index) => (
                 <div key={index} className="info-card p-4 sm:p-6 flex items-start gap-4">
-                  
+
                   <div>
                     <h4 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">{feature.title}</h4>
                     <p className="text-gray-600 leading-relaxed text-sm sm:text-base">{feature.description}</p>
@@ -107,7 +109,9 @@ export function SafetySecurity() {
               <p className="text-gray-600 mb-4 text-sm sm:text-base">
                 Testa dina spelvanor med ett enkelt självtest online
               </p>
-              <p className="text-blue-600 font-semibold text-sm sm:text-base">www.stodlinjen.se</p>
+              <Link href="https://stodlinjen.se/">
+                <p className="text-blue-600 font-semibold text-sm sm:text-base">www.stodlinjen.se</p>
+              </Link>
             </div>
           </div>
         </div>
