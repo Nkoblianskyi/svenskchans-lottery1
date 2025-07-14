@@ -70,8 +70,8 @@ export function CommunityImpact() {
               </div>
             </div>
             <div className="text-center">
-              <div className="bg-white/10 rounded-2xl p-6 md:p-8">
-                <div className="stats-number mb-4 text-3xl sm:text-4xl md:text-5xl text-gray-900">250M</div>
+              <div className="bg-white/30 rounded-2xl p-6 md:p-8">
+                <div className="stats-number mb-4 text-3xl sm:text-4xl md:text-5xl text-black">250M</div>
                 <p className="text-base sm:text-lg md:text-xl opacity-90">
                   kronor donerade till välgörenhet sedan start
                 </p>
